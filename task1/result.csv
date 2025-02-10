@@ -1,0 +1,2 @@
+yandex.ru,google.com,youtube.com
+"CompletedProcess(args=['ping', 'yandex.ru'], returncode=0)","CompletedProcess(args=['ping', 'google.com'], returncode=0)","CompletedProcess(args=['ping', 'youtube.com'], returncode=0)"
