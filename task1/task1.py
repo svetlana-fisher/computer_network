@@ -1,5 +1,6 @@
-from ping3 import ping
 import csv
+from ping3 import ping
+
 
 hosts = ["yandex.ru",
          "google.com",
