@@ -45,7 +45,7 @@ def save_to_csv(data, filename='articles_data.csv'):
         writer.writerows(data)
 
 
-# ереход на следующуя страницу
+# переход на следующуя страницу
 def next_page(driver):
     driver.find_element(By.XPATH, "//*[contains(@class,'tm-pagination__arrow_next')]").click()
 
@@ -59,7 +59,7 @@ def main():
         data = fetch_data(driver)
         save_to_csv(data)
         next_page(driver)
-        sleep(5)
+        sleep(5) # Ждем загрузки страницы
     # закрытие окна
     driver.quit()
 
