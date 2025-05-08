@@ -1,0 +1,9 @@
+FROM nginx:1.27.4
+
+RUN apt-get update && \
+    apt-get install -y libgeoip-dev geoip-bin geoip-database nginx-module-geoip && \
+    apt-get clean
+
+COPY nginx.conf /etc/nginx/nginx.conf
+# Копирование страницы заглушки
+COPY blocked.html /usr/share/nginx/html/blocked.html
